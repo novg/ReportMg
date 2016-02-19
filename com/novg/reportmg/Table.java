@@ -1,3 +1,5 @@
+package com.novg.reportmg;
+
 import java.util.ArrayList;
 import java.util.List;
 

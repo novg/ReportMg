@@ -1,5 +1,4 @@
-import java.nio.file.Path;
-import java.nio.file.Paths;
+package com.novg.reportmg;
 
 /**
  * Created by NovgorodskiyAK on 11.01.2016.
@@ -9,7 +8,7 @@ public class Main {
         String fileName = "";
 
         if (args.length == 0) {
-            System.out.println("usage: reportmg excelFile");
+            System.out.println("usage: reportMg excelFile");
             System.exit(-1);
         } else {
             fileName = args[0];

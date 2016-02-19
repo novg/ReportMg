@@ -1,3 +1,5 @@
+package com.novg.reportmg;
+
 /**
  * Created by NovgorodskiyAK on 15.01.2016.
  */

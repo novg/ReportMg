@@ -1,3 +1,5 @@
+package com.novg.reportmg;
+
 import java.util.AbstractCollection;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
