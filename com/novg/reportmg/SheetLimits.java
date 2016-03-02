@@ -54,7 +54,7 @@ public class SheetLimits {
 
         int rowMerge = row + 3;
         String[][] table = LimitsInitializer.MANAGEMENT_SAZ;
-        row = createTableLimits("РУКОВОДСТВО  ОАО \"Саяногорский Алюминиевый завод\"", table, row, false);
+        row = createTableLimits("РУКОВОДСТВО  АО \"РУСАЛ Саяногорск\"", table, row, false);
         mergeCells(rowMerge, row - 1, 0);
 
         rowMerge = row + 3;
@@ -96,7 +96,7 @@ public class SheetLimits {
 
         rowMerge = row + 3;
         table = LimitsInitializer.ECOLOGY;
-        row = createTableLimits("ДИРЕКЦИЯ ПО ЭКОЛОГИИ И КАЧЕСТВУ", table, row, true);
+        row = createTableLimits("ДИРЕКЦИЯ ПО ЭКОЛОГИИ И АНАЛИТИЧЕСКОМУ КОНТРОЛЮ ПРОИЗВОДСТВА", table, row, true);
         mergeCells(rowMerge, row - 1, 200);
 
         rowMerge = row + 3;
@@ -106,11 +106,11 @@ public class SheetLimits {
         rowMerge += 4;
         mergeCells(rowMerge, rowMerge + 1, 500);
         rowMerge += 2;
-        mergeCells(rowMerge, rowMerge + 11, 2850);
-        rowMerge += 12;
+        mergeCells(rowMerge, rowMerge + 10, 2850);
+        rowMerge += 11;
         mergeCells(rowMerge, rowMerge + 3, 400);
         rowMerge += 4;
-        mergeCells(rowMerge, rowMerge + 1, 50);
+        mergeCells(rowMerge, rowMerge + 2, 50);
 
         rowMerge = row + 3;
         table = LimitsInitializer.PERSONNEL;

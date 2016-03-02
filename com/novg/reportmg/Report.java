@@ -237,7 +237,7 @@ public class Report {
             case Corporate: {
                 sheet = workbook.createSheet("Корпоративка");
                 map = Initializer.getCorporateMap();
-                caption = Initializer.getCorporateCaptiion();
+                caption = Initializer.getCorporateCaption();
                 break;
             }
             case MvzOrder:
