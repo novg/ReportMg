@@ -1,8 +1,5 @@
 package com.novg.reportmg;
 
-/**
- * Created by NovgorodskiyAK on 11.01.2016.
- */
 public class Main {
     public static void main(String[] args) {
         String fileName = "";

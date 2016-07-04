@@ -10,9 +10,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by NovgorodskiyAK on 11.01.2016.
- */
 public class Reader {
     private List<String> parse(List<String> list) {
         List<String> parsedList = new ArrayList<>();

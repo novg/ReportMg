@@ -1,16 +1,17 @@
 package com.novg.reportmg;
 
-import java.util.AbstractCollection;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * Created by NovgorodskiyAK on 13.01.2016.
- */
 public class Initializer {
+
+    // Предотвращает создание объектов этого класса
+    private Initializer() {
+    }
+
     static int[] getMvzGts() {
-        int[] mvzGts = {
+
+        return new int[]{
                 0, 530100000, 530200000, 530202000, 530204020,
                 530300000, 530300010, 530300040, 530600000, 530600010,
                 530600020, 530600030, 530600040, 530601000, 530700000,
@@ -25,12 +26,10 @@ public class Initializer {
                 531703000, 531800040, 531900000, 531910000, 531910020,
                 530700090,
         };
-
-        return mvzGts;
     }
 
     static int[] getMvzRtk() {
-        int[] mvzRtk = {
+        return new int[]{
                 0, 530100000, 530200000, 530202000, 530300000,
                 530300010, 530300040, 530600000, 530600010, 530600020,
                 530600030, 530600040, 530601000, 530700000, 530700010,
@@ -45,22 +44,18 @@ public class Initializer {
                 531900000, 531910000, 531910020, 530700090,
 
         };
-        return mvzRtk;
     }
 
     static String[] getMvzCaption() {
-        String[] caption = {"МВЗ", "Заказ", "Сумма по МВЗ"};
-        return caption;
+        return new String[]{"МВЗ", "Заказ", "Сумма по МВЗ"};
     }
 
     static String[] getStatisticCaption() {
-        String[] caption = {"Дата", "Время", "Город", "Абонент", "Мин", "Сумма", "Код", "Выз_телефон", "МВЗ", "Заказ"};
-        return caption;
+        return new String[]{"Дата", "Время", "Город", "Абонент", "Мин", "Сумма", "Код", "Выз_телефон", "МВЗ", "Заказ"};
     }
 
     static String[] getMvzPhoneCaption() {
-        String[] caption = {"№ телефона", "Наименование заказа"};
-        return caption;
+        return new String[]{"№ телефона", "Наименование заказа"};
     }
 
     static Map<String, String> getMvzPhoneMap() {
@@ -112,6 +107,7 @@ public class Initializer {
         map.put("73441", "530700000");
         map.put("73456", "530100000");
         map.put("73512", "530600010");
+        map.put("73518", "530800000");
         map.put("73522", "530600010");
         map.put("73531", "531100020");
         map.put("73570", "531910000");
@@ -178,8 +174,7 @@ public class Initializer {
     }
 
     static String[] getMvzOrderCaption() {
-        String[] caption = {"Наименование заказа", "№ заказа"};
-        return caption;
+        return new String[]{"Наименование заказа", "№ заказа"};
     }
 
     static Map<String, String> getMvzOrderMap() {
@@ -244,8 +239,7 @@ public class Initializer {
     }
 
     static String[] getCorporateCaption() {
-        String[] caption = {"№ телефона", "Категория"};
-        return caption;
+        return new String[]{"№ телефона", "Категория"};
     }
 
     static Map<String, String> getCorporateMap() {

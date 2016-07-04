@@ -4,9 +4,6 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-/**
- * Created by NovgorodskiyAK on 12.01.2016.
- */
 public class CellStyles {
     private XSSFWorkbook workbook;
 
@@ -71,13 +68,6 @@ public class CellStyles {
         XSSFCellStyle style = heading();
         style.setDataFormat(workbook.createDataFormat().getFormat("0.00"));
         style.getFont().setBoldweight(Font.BOLDWEIGHT_BOLD);
-        return style;
-    }
-
-    XSSFCellStyle headingSum() {
-        XSSFCellStyle style = heading();
-        style.setAlignment(HorizontalAlignment.RIGHT);
-        style.getFont().setItalic(true);
         return style;
     }
 

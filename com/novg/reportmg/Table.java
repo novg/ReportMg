@@ -3,9 +3,6 @@ package com.novg.reportmg;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by NovgorodskiyAK on 12.01.2016.
- */
 public class Table {
     private int separator;
     private List<List<String>> table;

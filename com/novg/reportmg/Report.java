@@ -13,12 +13,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-/**
- * Created by NovgorodskiyAK on 12.01.2016.
- */
 public class Report {
     private enum SheetName {
-        Corporate, MvzOrder, MvzPfone
+        Corporate, MvzOrder, MvzPhone
     }
 
     private enum Region {
@@ -58,7 +55,7 @@ public class Report {
         table = reader.readFile(fileName);
         createSheetBasic(SheetName.Corporate);
         createSheetBasic(SheetName.MvzOrder);
-        createSheetBasic(SheetName.MvzPfone);
+        createSheetBasic(SheetName.MvzPhone);
         createSheetStatistic(Region.All);
         createSheetStatistic(Region.Gts);
         createSheetStatistic(Region.Rtk);
@@ -245,7 +242,7 @@ public class Report {
                 map = Initializer.getMvzOrderMap();
                 caption = Initializer.getMvzOrderCaption();
                 break;
-            case MvzPfone:
+            case MvzPhone:
                 sheet = workbook.createSheet("МВЗ=Телефон");
                 map = Initializer.getMvzPhoneMap();
                 caption = Initializer.getMvzPhoneCaption();
